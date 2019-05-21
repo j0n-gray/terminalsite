@@ -1,0 +1,545 @@
+/* dek dev page */
+
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+@font-face {
+    font-family: "iosevka";
+    src: url("static/iosevka-mini.woff") format('woff');
+}
+
+body {
+    font-size: 14px;
+    margin: 0px;
+    color: #f7f7f7;
+    background: #32313c;
+    font-family: PT Mono, monospace, Helvetica Neue, Consolas, Terminal;
+}
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: #00eb22;
+}
+a:hover, a:active {
+    color: white;
+}
+.book {
+    position: relative;
+    margin: 10px;
+    width: 250px;
+    height: 350px;
+    float: left;
+    word-wrap: break-word;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.book img {
+    width: 200px;
+    max-height: 300px;
+}
+.book-input {
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    box-shadow: inset 1px 3px 18px 0px black;
+}
+.book-img {
+    width: 200px;
+    margin: 0 auto;
+}
+.book-text {
+    width: 90%;
+    padding: 5px;
+    position: absolute;
+    bottom: 5px;
+    margin: 5px;
+    background-color: #222;
+}
+.book-x {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.menu {
+    padding: 0px 10px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    left: 0;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+.menu svg {
+    /*float: left;*/
+    margin: 5px;
+}
+.menu a {
+    color: white;
+}
+.menu a:hover {
+    color: #00eb22;
+}
+.menu img {
+    max-width: 100%;
+    color: white;
+}
+#welcome {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+#jobtitle {
+	font-size:12px;
+}
+.footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.53);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+    width: 60%;
+    max-width: 60%;
+    margin: 0 auto;
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    text-align: center;
+    /* REMOVING THIS WILL STOP AUTO RESIZING
+	height: 40%;
+	max-height: 50%; */
+}
+.main pre {
+    font-family: DeJaVu Sans Mono, Menlo, Courier New, Courier, Lucida Console, Monaco, iosevka, monospace;
+}
+.links {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.link-list {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+}
+.link img {
+    float: left;
+    height: 19px;
+}
+.link a {
+    float: left;
+}
+.link {
+    clear: left;
+    margin: 3px;
+    height: 20px;
+}
+.short {
+    padding: 12px;
+    border-radius: 2px;
+    font-size: 1.1rem;
+    color: #fff;
+
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    background: #222;
+    font-family: 'Lato', sans-serif;
+    -webkit-appearance: none;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-color: #bada55!important;
+    border: 1px solid transparent;
+}
+.button {
+    background-color: #0099cc;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 15px 16px 15px 48px;
+    font-size: 16px;
+}
+.button:hover{
+    background-color: #008CBA;
+}
+.sendbutton {
+    background-position: 14px 11px;
+    background-image: url('/static/upload.svg');
+    background-repeat: no-repeat;
+}
+input[type="file"] {
+    display: none;
+}
+#result {
+    margin-top: 35px;
+}
+.wiki-searchbar {
+    padding: 5px;
+    border: none;
+}
+.wiki-container {
+    display: flex;
+}
+.wiki-menu {
+    font-size: 13px;
+    position: relative;
+    float: left;
+    padding: 12px;
+}
+.wiki-menuitem {
+    width: 260px;
+    margin: 5px 0px;
+}
+.wiki-mdate {
+    color: #555;
+    padding: 5px;
+    font-size: 10px;
+}
+.wiki-subitem {
+    display: none;
+    padding-left: 20px;
+}
+.wiki-file {
+    padding: 15px;
+    font-family: Menlo, Courier New, Courier, Lucida Console, Monaco, monospace!important;
+    font-size: 12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding-bottom: 100px;
+}
+.wiki-file img {
+    width: 100%;
+    height: auto;
+}
+.wiki-textbox {
+    margin-bottom: 15px;
+}
+.wiki-add-btn {
+    position: absolute;
+    top: 17px;
+    right: 5px;
+}
+.wiki-update-btn {
+    position: absolute;
+    top: 43px;
+    right: 4px;
+}
+@media screen and (max-width: 700px) {
+    .wiki-menu {
+        /*display: none;*/
+        width: 90%;
+    }
+    .wiki-container {
+        display: block;
+    }
+    .wiki-file {
+        width: 520px;
+        float: left;
+        clear: left;
+    }
+}
+.proj {
+    width: 100%;
+    float: left;
+}
+.proj-left {
+    float: left;
+    width: 30%;
+    margin-bottom: 30px;
+}
+.proj-right {
+    float: left;
+    width: 70%;
+    margin-bottom: 30px;
+}
+.proj hr {
+    margin-bottom: 20px;
+}
+.proj a:link, .proj a:visited {
+    color: #bada55 !important;
+}
+.proj a:hover, .proj a:active {
+    color: white !important;
+}
+textarea {
+    min-width: 200px;
+    height: 300px;
+    margin-bottom: 30px !important;
+}
+.pastebutton {
+    padding: 16px 24px !important;
+}
+.paste {
+    text-align: left;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+.comment {
+    color: deepskyblue;
+}
+.highlight-search {
+    color: yellow;
+}
+.highlight-search-file {
+    color: #bada55;
+    text-decoration: underline;
+}
+table {
+    font-size: 12px;
+    empty-cells: show;
+    border: 0px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+table td:first-child {
+    border-left-width: 0px;
+}
+td {
+    padding: 0.5em 1em;
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    margin: 0px;
+}
+tr:nth-child(odd)
+{
+    background: rgba(10,10,10,0.2);
+}
+
+.bgimg {
+    background-image: url(../img/bg3.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    height: 100%;
+}
+.bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+#app {
+    height: 100%;
+    text-align: left;
+    color: #00EB22;
+    padding: 18px;
+}
+
+#terminal_top {
+    background-color: rgba(0, 0, 0, 0.69);
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    color: #00EB22;
+    padding: 0;
+    background-image: url(../img/terminal-bg.png);
+    background-repeat: no-repeat;
+}
+
+#terminal_top p {
+	padding: 10px;
+    padding-right: 12px;
+    font-size: 10px;
+    color: #12570a;
+}
+
+#contentc1 {
+	min-height:900px;
+}
+
+#left {
+    float:left;
+	width:500px;
+	height:100%;
+	background-color:#1c1b21;
+}
+#right {
+    float:right;
+	width:500px;
+	height:100%;
+	background-color:#1c1b21;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: #070808b3;
+    border: 1px solid black;
+}
+
+.tab button {
+	font-family: PT Mono, monospace, Helvetica Neue, Consolas, Terminal;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 16px;
+    transition: 0.3s;
+    color: #262626;
+    font-size: 10px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #030306b3;
+    color: #3cff00;
+}
+
+.tabcontent {
+display: none;
+border: 1px solid #000;
+border-top-color: rgb(0, 0, 0);
+border-top-style: solid;
+border-top-width: 1px;
+border-top: none;
+background-color: rgba(31, 31, 31, 0.8);
+text-align: left;
+color: #00EB22;
+padding: 18px;
+height: 100%;
+} 
+
+.topright {
+    float: right;
+    cursor: pointer;
+    font-size: 15px;
+    padding-left: 16px;
+    height: 9px;
+    padding-bottom: 1px;
+    margin-top: -1px;
+}
+
+.topright:hover {color: white;}
+
+.tab1content {
+    height: 100%;
+    padding: 18px;
+}
+
+.tab3content {
+    height: 100%;
+    padding: 18px;
+}
+
+.tab3content terminal {
+    color: #00eb22 !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+	font-family: PT Mono, monospace, Helvetica Neue, Consolas, Terminal !important;
+	font-size: 14px !important;
+	overflow-y:visible !important;
+}
+
+.cmd, .cmd div, .cmd span:not(.inverted):not(.token):not(.emoji), .terminal, .terminal-output>:not(.raw) a, .terminal-output>:not(.raw) div, .terminal-output>:not(.raw) span:not(.token):not(.inverted):not(.error):not(.emoji) {
+    color: #00eb22 !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+	font-family: PT Mono, monospace, Helvetica Neue, Consolas, Terminal !important;
+	font-size: 14px !important;
+	overflow-y:visible !important;
+}
+
+.terminal>div:not(.font) {
+    min-height: 100% !important;
+    padding: 11px !important;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+.main {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0;
+    width: 60%;
+    max-width: 60%;
+    margin: 0 auto;
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    text-align: center;
+    height: 40%;
+    max-height: 50%;
+}
+
+.tabcontent {
+    display: none;
+    border: 1px solid #000;
+    border-top-color: rgb(0, 0, 0);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgb(0, 0, 0);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top: none;
+    background-color: rgba(31, 31, 31, 0.8);
+    text-align: left;
+    color: #00EB22;
+    padding: 18px;
+    overflow: scroll;
+    height: 100%;
+}
+
+#app {
+    height: 100%;
+    text-align: left;
+    color: #00EB22;
+    padding: 18px;
+	font-size:11px;
+}
+#left {
+	width:150px;
+}
+#right {
+	width:150px;
+}
+.tab1content {
+    height: 100%;
+    padding: 18px;
+    font-size: 11px;
+}
+.tab3content {
+    height: 100%;
+    padding: 18px;
+    font-size: 11px;
+}
+.terminal > div:not(.font) {
+    min-height: 100% !important;
+    padding: 0px !important;
+}
+.cmd, .cmd div, .cmd span:not(.inverted):not(.token):not(.emoji), .terminal, .terminal-output > :not(.raw) a, .terminal-output > :not(.raw) div, .terminal-output > :not(.raw) span:not(.token):not(.inverted):not(.error):not(.emoji) {
+    color: #00eb22 !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    font-family: PT Mono, monospace, Helvetica Neue, Consolas, Terminal !important;
+    font-size: 11px !important;
+    overflow-y: visible !important;
+}
+}
