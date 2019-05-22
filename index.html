@@ -1,31 +1,149 @@
-<html>
-<head>
-<title>j0nn.com</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js" /></script>
-</head>
-<body>
-    <div class="bgimg"></div>
-    <div class="bg"></div>
-    <div class="menu">
-        <a href="#" data-name="test link 1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></a>
-        <a href="#" data-name="test link 2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></a>
-        <a href="#" data-name="test link 3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-minus"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line></svg></a>
-        <a href="#" data-name="test link 4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
-        <a href="#" data-name="test link 5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></a>
-        <a href="#" data-name="test link 6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></a>
-    <div id="welcome"></div>
-    <div id="jobtitle"></div>
-    </div>
-    <div class="main">
-   	 <div id="terminal_top"><p>Tmux v1.337<p></div>
-    <div id="app"></div>     
-    </div>
-    <div class="footer">
-     <a href="https://www.j0nn.com">接 j0nn</a>   
-    </div>
-</body>
+﻿<html>
+	<head>
+	    <title>j0nn.com</title>
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" type="text/css" href="css/style.css" id="stl">
+	    	<link rel="stylesheet" type="text/css" href="css/jquery.terminal.min.css"/>
+		    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		    <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+		    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+			<script src="https://unpkg.com/js-polyfills/keyboard.js"></script>
+			<script src="js/jquery.terminal.min.js"></script>
+		    <script src="js/main.js"></script>
+	</head>
+		<body>
+            <div class="header" id="header">
+                <div class="digital-clock">00:00:00</div>
+			</div>
+
+			<div class="bgimg"></div>
+
+			<div class="bg"></div>
+
+			<div class="menu">
+				<a href="#" data-name="test link 1">
+					<svg
+						xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
+						<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+						<path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+					</svg>
+				</a>
+				<a href="#" data-name="test link 2">
+					<svg
+						xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book">
+						<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+						<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+					</svg>
+				</a>
+				<a href="#" data-name="test link 3">
+					<svg
+						xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-minus">
+						<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+						<polyline points="14 2 14 8 20 8"></polyline>
+						<line x1="9" y1="15" x2="15" y2="15"></line>
+					</svg>
+				</a>
+				<a href="#" data-name="test link 4">
+					<svg
+						xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+						<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+						<polyline points="15 3 21 3 21 9"></polyline>
+						<line x1="10" y1="14" x2="21" y2="3"></line>
+					</svg>
+				</a>
+				<a href="#" data-name="test link 5">
+					<svg
+						xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers">
+						<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+						<polyline points="2 17 12 22 22 17"></polyline>
+						<polyline points="2 12 12 17 22 12"></polyline>
+					</svg>
+				</a>
+				<a href="#" data-name="test link 6">
+					<svg
+						xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+						<rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+						<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+					</svg>
+				</a>
+				<div id="welcome"></div>
+                <div id="jobtitle"></div>
+			</div>
+
+			<div class="main" id="main">
+				<div id="terminal_top">
+					<p>Tmux v1.337 
+						<span onclick="">&times</span>
+						<p>
+						</div>
+						<div class="tab">
+							<button class="tablinks" onclick="openTab(event, 'tab1')">Tab 1 
+								<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+							</button>
+							<button class="tablinks" onclick="openTab(event, 'tab2')" id="defaultOpen">admin@j0nn.com 
+								<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+							</button>
+							<button class="tablinks" onclick="openTab(event, 'tab3')">Tab 3 
+								<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+							</button>
+							<button id="terminal_tab" class="tablinks" onclick="openTab(event, 'tab4')">Terminal 
+								<span onclick="this.parentElement.style.display='none' ; openTab(event, 'tab3')" class="topright">&times</span>
+							</button>
+						</div>
+						<div id="tab1" class="tabcontent">
+							<div class="tab1content">tab 1 content</div>
+						</div>
+						<div id="tab2" class="tabcontent">
+							<div id="app">Terminal loading...
+								<br/>Loaded.
+								<br/>
+							</div>
+						</div>
+						<div id="tab3" class="tabcontent">
+							<div class="tab3content">tab 3 content</div>
+						</div>
+						<div id="tab4" class="tabcontent">
+							<div id="terminal" class="tab3content"></div>
+						</div>
+					</div>
+
+			<div id="iconrow">
+				<div id="icon">
+						<a id="icon_img">
+							<img src="https://desktop.sonspring.com/assets/images/icons/icon_32_drive.png"/><br/>
+							Terminal</a>
+				</div>
+				<div id="icon2">
+						<a id="icon_img">
+							<img src="https://desktop.sonspring.com/assets/images/icons/icon_32_network.png"/><br/>
+							Internet</a>
+				</div>
+				<div id="icon3">
+						<a id="icon_img">
+							<img src="https://desktop.sonspring.com/assets/images/icons/icon_32_computer.png"/><br/>
+							Root</a>
+				</div>
+			</div>
+
+			<div class="footer" id="footer">
+				<a href="https://steamcommunity.com/id/dekjge">接 j0nn.com</a>
+				<div id="idd">TOGGLE THEME</div>
+
+					<button id="infoBtn">Open infobox</button>
+					<div id="myinfobox" class="infobox">
+
+					<!-- infobox content -->
+					<div class="infobox-content">
+							<div id="terminal_top">
+							<p>Tmux v1.337 
+							<span class="close">&times</span>
+							<p> 
+					</div>
+							<h1 style="text-align: center;"><img src="https://media1.tenor.com/images/eb3a8ebf22de933b22972d91f53a1ad6/tenor.gif"></h1>
+							<p>Some text in the infobox..</p>
+					</div>
+					</div> 
+
+			</div>
+		</body>
 </html>
