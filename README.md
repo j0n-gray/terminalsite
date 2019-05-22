@@ -10,5 +10,7 @@ https://github.com/jcubic/jquery.terminal
 https://github.com/alexmacarthur/typeit/
 
 Developers
-@j0n-gray
-@deklol
+
+[@j0n-gray](https://github.com/j0n-gray)
+
+[@deklol](https://github.com/deklol)
