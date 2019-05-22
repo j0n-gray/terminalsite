@@ -132,6 +132,41 @@ $(function() {
     .draggable()
    });
 
+// Makes the infobox draggable
+$(function() {
+    $('.infobox-content')
+    .draggable()
+   });
+
+// Makes the icon dock draggable
+$(function() {
+// Get the infobox
+    var infobox = document.getElementById("myinfobox");
+
+// Get the button that opens the infobox
+    var btn = document.getElementById("infoBtn");
+
+// Get the <span> element that closes the infobox
+    var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the infobox
+    btn.onclick = function() {
+    infobox.style.display = "block";
+            }
+
+// When the user clicks on <span> (x), close the infobox
+    span.onclick = function() {
+    infobox.style.display = "none";
+            }
+
+// When the user clicks anywhere outside of the infobox, close it
+    window.onclick = function(event) {
+    if (event.target == infobox) {
+        infobox.style.display = "none";
+            }
+        } 
+    }); 
+
 // Makes the icon1 draggable
 $(function() {
     $('#icon')

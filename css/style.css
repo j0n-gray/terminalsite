@@ -181,6 +181,7 @@ a:hover, a:active {
     margin: auto;
     margin-bottom: 20px;
     height: 100px;
+    min-width: 380px;
 }
 
 #icon3 img {
@@ -214,7 +215,7 @@ a:hover, a:active {
     transform: translateY(-100px);
     -webkit-transform: translateY(-100px);
     text-align: center;
-    z-index:99;
+    z-index:90;
     /* REMOVING THIS WILL STOP AUTO RESIZING
 	height: 40%;
 	max-height: 50%; */
@@ -593,6 +594,43 @@ height: 100%;
     padding: 11px !important;
 }
 
+ /* The infobox (background) */
+ .infobox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* infobox Content/Box */
+  .infobox-content {
+    background-color: #242424b3;
+    margin: 15% auto;
+    width: 35%;
+    height: 365px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    font-weight: bold;
+  }
+  
+  .close:hover, .close:focus {
+    color: #e600ff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
@@ -614,16 +652,19 @@ and (max-device-width : 480px) {
 }
 
 #icon {
+    width: 90px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    text-shadow: 2px 2px 4px #000000;
+    color: #00ffe3;
+}
 
-    position: absolute;
-        left: 874.4px;
-        top: -456px;
-    margin-top: -5%;
-    margin-left: 2%;
-    width: 100px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+#iconrow {
+    display: none;
 }
 
 .tabcontent {
