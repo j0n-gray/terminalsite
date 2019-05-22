@@ -126,6 +126,12 @@ $(document).ready(function() {
 //     .draggable()
 //   });
 
+// Makes the icon dock draggable
+$(function() {
+    $('#iconrow')
+    .draggable()
+   });
+
 // Makes the icon1 draggable
 $(function() {
     $('#icon')

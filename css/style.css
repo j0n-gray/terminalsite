@@ -111,6 +111,10 @@ a:hover, a:active {
     padding-right:10px;
 }
 
+/* #app pre {
+
+} */
+
 .header {
     position: absolute;
     top: 0px;
@@ -134,7 +138,7 @@ a:hover, a:active {
     vertical-align: middle;
     margin: 10px;
     text-shadow: 2px 2px 4px #000000;
-    color: #00e3eb;
+    color: #00ffe3;
 
 }
 
@@ -147,7 +151,7 @@ a:hover, a:active {
     vertical-align: middle;
     margin: 10px;
     text-shadow: 2px 2px 4px #000000;
-    color: #00e3eb;
+    color: #00ffe3;
 
 }
 
@@ -160,7 +164,7 @@ a:hover, a:active {
     vertical-align: middle;
     margin: 10px;
     text-shadow: 2px 2px 4px #000000;
-    color: #00e3eb;
+    color: #00ffe3;
 
 }
 
@@ -170,7 +174,13 @@ a:hover, a:active {
     bottom: 10%;
     right: 0;
     left: 0;
-    padding-bottom:20px;
+    background-color: #00000080;
+    border-radius: 15px;
+    border: 0px solid black;
+    width: 25%;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 100px;
 }
 
 #icon3 img {
